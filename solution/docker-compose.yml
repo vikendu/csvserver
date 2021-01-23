@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+ web:
+  image: 'infracloudio/csvserver:latest'
+  build:
+   context: .
+   dockerfile: Dockerfile
+  ports:
+   - '9393:9300'
