@@ -17,3 +17,6 @@
 2. Build image with `docker build -t prom/prometheus .`
 3. Delete any containers from part 2.
 4. Run `docker-compose up`
+
+## Possible error:
+If docker-compose fails on Linux distros; change line 9 of `/solution/prometheus/prometheus.yml` to: `    - targets: ['localhost:9393']`   
